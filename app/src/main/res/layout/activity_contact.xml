@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02DFFB"
+    android:orientation="vertical"
+    tools:context=".ContactActivity">
+
+    <include
+        android:id="@+id/activity_contact_toolbar"
+        layout="@layout/activity_toolbar">
+
+    </include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Emergency Contacts"
+        android:textColor="@color/colorAccent"
+        android:textSize="40dp" />
+
+    <ListView
+        android:id="@+id/contactListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#F89070"
+        android:divider="@null"
+        android:dividerHeight="10dp">
+
+    </ListView>
+
+</LinearLayout>
